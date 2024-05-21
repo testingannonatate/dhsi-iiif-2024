@@ -1,4 +1,4 @@
-name: convert_images_1
+name: Manifest workflow
 on: 
   workflow_dispatch:
   push:
