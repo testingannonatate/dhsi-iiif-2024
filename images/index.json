@@ -3,23 +3,23 @@
     "http://www.w3.org/ns/anno.jsonld",
     "http://iiif.io/api/presentation/3/context.json"
   ],
-  "id": "https://dnoneill.github.io/dnoneill/dhsi-iiif-2024/index.json",
+  "id": "https://dnoneill.github.io/index.json",
   "type": "Manifest",
   "items": [
     {
-      "id": "https://dnoneill.github.io/dnoneill/dhsi-iiif-2024/index.json/canvas/0",
+      "id": "https://dnoneill.github.io/index.json/canvas/0",
       "type": "Canvas",
       "items": [
         {
-          "id": "https://dnoneill.github.io/dnoneill/dhsi-iiif-2024/index.json/canvas/0/annotationpage/0",
+          "id": "https://dnoneill.github.io/index.json/canvas/0/annotationpage/0",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://dnoneill.github.io/dnoneill/dhsi-iiif-2024/index.json/canvas/0/annotation/0",
+              "id": "https://dnoneill.github.io/index.json/canvas/0/annotation/0",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://dnoneill.github.io/dnoneill/dhsi-iiif-2024/demo_image.jpg",
+                "id": "https://dnoneill.github.io/demo_image.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "label": {
@@ -31,13 +31,13 @@
                 "height": 1536,
                 "service": [
                   {
-                    "@id": "https://dnoneill.github.io/dnoneill/dhsi-iiif-2024/+tiles",
+                    "@id": "https://dnoneill.github.io/+tiles",
                     "@type": "ImageService2",
                     "profile": "http://iiif.io/api/image/2/level2.json"
                   }
                 ]
               },
-              "target": "https://dnoneill.github.io/dnoneill/dhsi-iiif-2024/index.json/canvas/0"
+              "target": "https://dnoneill.github.io/index.json/canvas/0"
             }
           ]
         }
@@ -51,7 +51,7 @@
       "height": 1536,
       "thumbnail": [
         {
-          "id": "https://dnoneill.github.io/dnoneill/dhsi-iiif-2024/thumb.jpg",
+          "id": "https://dnoneill.github.io/images/thumb.jpg",
           "type": "Image"
         }
       ]

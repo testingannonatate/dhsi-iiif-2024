@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/image/2/context.json",
-  "@id": "https://dnoneill.github.io/dnoneill/dhsi-iiif-2024//+tiles",
+  "@id": "https://dnoneill.github.io//+tiles",
   "profile": [
     "http://iiif.io/api/image/2/level0.json",
     {
