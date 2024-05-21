@@ -24,7 +24,7 @@ jobs:
       - name: install biiif-cli
         run: npm i biiif-cli -g
       - name: run biiif
-        run: biiif images -u 'https://${{ github.repository_owner }}.github.io/${{ github.repository }}'
+        run: biiif images -u 'https://${{ github.repository_owner }}.github.io/${{ github.repository.name }}'
       - name: commit files
         run: |
           git config --local user.email "action@github.com"
