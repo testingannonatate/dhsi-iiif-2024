@@ -1,0 +1,14 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://dnoneill.github.io/dhsi-iiif-2024/index.json",
+  "type": "Manifest",
+  "items": [],
+  "label": {
+    "@none": [
+      "images"
+    ]
+  }
+}
