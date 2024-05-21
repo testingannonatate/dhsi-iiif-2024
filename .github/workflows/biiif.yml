@@ -1,0 +1,40 @@
+name: convert_images_1
+on: 
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - images/**/*.yml
+      - images/*.yml
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  convertimages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+      - name: install biiif-cli
+        run: npm i biiif-cli -g
+      - name: run biiif
+        run: biiif images -u ''
+      - name: commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git config pull.rebase false
+          git pull origin main
+          git add images/*
+          git commit -m "Create 1 manifest and IIIF derivatives" -a || echo "No changes to commit"
+      - name: push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main 
