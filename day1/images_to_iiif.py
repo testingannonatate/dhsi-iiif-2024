@@ -59,4 +59,4 @@ for file in clean_files(root_dir):
         os.mkdir(iiiffulldir)
     else:
         iiiffulldir = os.path.join(iiiffulldir, '0')
-    os.system('mv {} {}'.format(file, os.path.join(iiiffulldir, 'default.jpg')))
+    os.system('cp {} {}'.format(file, os.path.join(iiiffulldir, 'default.jpg')))
